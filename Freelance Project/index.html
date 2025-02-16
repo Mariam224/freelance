@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QuizMania</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Start Quiz Button -->
+  <div id="start-container" class="start-container">
+    <button id="start-btn" onclick="startQuiz()">Start Quiz</button>
+  </div>
+
+  <div class="quiz-container" style="display: none;">
+    <div class="question-container">
+      <p id="question" class="question-text">Question will appear here</p>
+      <div id="answers" class="answers">
+        <!-- Answer buttons will appear here -->
+      </div>
+      <button id="next-btn" class="next-btn" onclick="nextQuestion()" disabled>Next</button>
+    </div>
+    <div id="score" class="score">Score: 0</div>
+  </div>
+  
+  <!-- Results Container (Hidden until quiz is complete) -->
+  <div id="result-container" class="result-container" style="display: none;">
+    <p id="final-message"></p>
+    <p id="final-score"></p>
+    <button id="restart-btn" onclick="restartQuiz()">Restart Quiz</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

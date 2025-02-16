@@ -1,0 +1,112 @@
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .start-container {
+    text-align: center;
+  }
+  
+  .start-container button {
+    background-color: #4B0082;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .quiz-container {
+    background-color: #ffffff;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: none; /* Hide quiz container initially */
+  }
+  
+  .question-container {
+    text-align: center;
+  }
+  
+  .question-text {
+    font-family: 'Verdana', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    color: #4B0082;
+  }
+  
+  .answers {
+    margin-top: 20px;
+  }
+  
+  .answer-btn {
+    display: block;
+    background-color: #f1f1f1;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+    text-align: left;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .answer-btn:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .answer-btn.correct {
+    background-color: green;
+    color: white;
+  }
+  
+  .answer-btn.incorrect {
+    background-color: red;
+    color: white;
+  }
+  
+  .next-btn {
+    background-color: #4B0082;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+  
+  .next-btn:disabled {
+    background-color: #cccccc;
+  }
+  
+  .score {
+    font-size: 18px;
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .result-container {
+    text-align: center;
+    font-size: 18px;
+  }
+  
+  #restart-btn {
+    margin-top: 20px;
+    background-color: #4B0082;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  
